@@ -1,0 +1,206 @@
+:root {
+  --primary: #ff7e67;
+  --secondary: #28527a;
+  --bg-gradient: linear-gradient(135deg, #ffecd2, #fcb69f);
+  --font: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg-gradient);
+  color: #333;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
+header, footer {
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+header h1, footer p {
+  margin: 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container umum */
+.container {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #ff5c45;
+}
+
+/* ===== Gallery grid untuk daftar story ===== */
+.story-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.story-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.story-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.story-item h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.story-item p {
+  flex-grow: 1;
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Tombol detail & delete */
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Header logout styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.welcome {
+  font-size: 0.9rem;
+}
+
+.camera-container video,
+.camera-container img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.capture-controls .btn {
+  flex: 1;
+}
+
+/* Menambahkan kelas animasi fade-in dan fade-out */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  font-size: 14px;
+  text-decoration: none;
+}
+.skip-to-content:focus {
+  top: 0;  /* Fokus ke tombol saat tab */
+  background: #fcb69f;
+  color: #fff;
+  outline: none;
+}
+
+
+/* Spinner icon dari Font Awesome */
+.fa-spin {
+  animation: fa-spin 1s infinite linear;
+}
+@keyframes fa-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  .container {
+    margin: 1rem;
+  }
+}

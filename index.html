@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Stories SPA</title>
+  
+  <!-- External Stylesheets -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-...omitted..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/auth.css" />
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+...omitted..."
+    crossorigin=""
+  />
+  
+  <!-- Link to the manifest file for PWA -->
+  <link rel="manifest" href="/manifest.json"> <!-- Link ke manifest -->
+
+  <!-- Icon for PWA -->
+  <link rel="icon" href="/assets/icons/icon-192x192.png">
+  <meta name="theme-color" content="#4CAF50">
+</head>
+
+<body>
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-to-content" tabindex="0">Skip to Content</a>  <!-- Fokuskan langsung ke konten utama -->
+
+  <div id="app">
+    <header-component></header-component>
+    <main id="main-content"></main>  <!-- Elemen konten utama -->
+    <footer-component></footer-component>
+  </div>
+
+  <!-- External JavaScript Libraries -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j...omitted..."
+    crossorigin=""
+  ></script>
+
+  <!-- Custom App Script -->
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
