@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Travel Stories SPA
 
 Aplikasi Single-Page (SPA) berbagi cerita traveling berbasis API Dicoding.  
@@ -17,3 +18,7 @@ Aplikasi Single-Page (SPA) berbagi cerita traveling berbasis API Dicoding.
 ## Struktur
 Lihat penjelasan pada dokumentasi di `src/`.
 
+=======
+# travel-stories-spa
+Aplikasi SPA untuk berbagi cerita perjalanan
+>>>>>>> 2f6a01b991d47ee5eea23846a24a06cf227d5623
